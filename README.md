@@ -4,6 +4,8 @@ This repository contains the conceptual design, mechanical engineering calculati
 
 ![Chassis Assembly](Results_and_Images/completeimage3.JPG)
 
+![Chassis Assembly](Results_and_Images/chassicimage2.JPG)
+
 ## 🎯 Project Overview
 Unlike standard automobiles, go-karts lack a suspension system. This requires the chassis itself to act as the suspension. This project focuses on optimizing the torsional rigidity of the chassis to successfully achieve the **"jacking effect"** (lifting the inner rear wheel during cornering) to prevent understeer, effectively compensating for the added weight of an EV battery pack.
 
@@ -25,6 +27,8 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 5. **Stability:** Buckling analysis confirmed a critical load factor of 1.6.
 
 ![FEA Stress Distribution](Results_and_Images/analysis-vonmises.JPG)
+
+![FEA Substitution](Results_and_Images/analysis-substitution.JPG)
 
 ## 📂 Repository Structure
 * `/CAD_Models`: Contains SolidWorks native parts/assemblies (.sldprt, .sldasm) and exported .STEP files for universal access.
