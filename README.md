@@ -24,7 +24,7 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 4. **Fatigue Analysis:** The 25mm rear axle was verified for infinite life under dynamic loads using the **Soderberg Criterion**.
 5. **Stability:** Buckling analysis confirmed a critical load factor of 1.6.
 
-![FEA Stress Distribution](Results_and_Images/analysis-vonmises.jpg)
+![FEA Stress Distribution](Results_and_Images/analysis-vonmises.JPG)
 
 ## 📂 Repository Structure
 * `/CAD_Models`: Contains SolidWorks native parts/assemblies (.sldprt, .sldasm) and exported .STEP files for universal access.
