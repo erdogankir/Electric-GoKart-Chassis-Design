@@ -2,7 +2,7 @@
 
 This repository contains the conceptual design, mechanical engineering calculations, and Finite Element Analysis (FEA) of a handling-oriented electric go-kart chassis. 
 
-![Chassis Assembly](Results_and_Images/completeimage3.jpg)
+![Chassis Assembly](Results_and_Images/completeimage3.JPG)
 
 ## 🎯 Project Overview
 Unlike standard automobiles, go-karts lack a suspension system. This requires the chassis itself to act as the suspension. This project focuses on optimizing the torsional rigidity of the chassis to successfully achieve the **"jacking effect"** (lifting the inner rear wheel during cornering) to prevent understeer, effectively compensating for the added weight of an EV battery pack.
