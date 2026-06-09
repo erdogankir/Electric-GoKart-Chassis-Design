@@ -37,3 +37,43 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 
 ---
 *Designed by Erdoğan Kır as a senior Mechatronics Engineering design project.*
+
+# Elektrikli Go-Kart Şasi Tasarımı ve Yapısal Optimizasyonu 🏎️⚡
+
+[cite_start]Bu depo, yol tutuş odaklı bir elektrikli go-kart şasisinin kavramsal tasarımını, makine mühendisliği hesaplamalarını ve Sonlu Elemanlar Analizi'ni (FEA) içermektedir[cite: 80].
+
+![Chassis Assembly](Results_and_Images/completeimage3.JPG)
+
+![Chassis Assembly](Results_and_Images/chassicimage2.JPG)
+
+## 🎯 Proje Özeti
+[cite_start]Standart otomobillerden farklı olarak, go-kartlar bir süspansiyon sistemine sahip değildir[cite: 128]. [cite_start]Bu durum, şasinin kendisinin bir süspansiyon elemanı gibi davranmasını zorunlu kılar[cite: 129]. [cite_start]Bu proje, elektrikli araç batarya paketinin ek ağırlığını telafi ederek önden kaymayı (understeer) önlemek ve viraj dönüşlerinde iç arka tekerleği kaldırmak olan **"jacking effect"** (kaldırma etkisi) mekanizmasını başarıyla sağlamak için şasinin burulma rijitliğini optimize etmeye odaklanmaktadır[cite: 130, 131, 132, 136].
+
+## ⚙️ Teknik Özellikler
+* [cite_start]**Şasi Malzemesi:** S355 Yapı Çeliği Boru (Ana kollar için 32x2mm, destekler için 25x2mm) [cite: 206, 213, 215]
+* [cite_start]**Güç Aktarma Sistemi:** 1.7 kW 48V Fırçasız DC (BLDC) Motor [cite: 90]
+* [cite_start]**Enerji Depolama:** 60A BMS ile yönetilen 14S10P Li-İyon Batarya Paketi (18650 NMC hücreler, ~1.5 kWh) [cite: 90, 168, 384]
+* [cite_start]**Maksimum Hız:** ~60 km/s (3.69 dişli oranı ile optimize edilmiştir) [cite: 148, 300]
+* [cite_start]**Aks Aralığı / İz Genişliği:** 1160 mm / 1400 mm [cite: 202, 237]
+
+## 🔬 Mühendislik Metodolojisi ve Analiz
+[cite_start]Tüm tasarım ve simülasyon aşamaları **SolidWorks 2024** kullanılarak gerçekleştirilmiştir[cite: 217]. Mühendislik iş akışı şunları içerir:
+
+1. [cite_start]**Araç Dinamiği:** Viraj kuvvetlerini ve teorik yük transferlerini belirlemek için Yarı-Statik Yük Transferi hesaplamaları[cite: 85].
+2. [cite_start]**Global FEA (Kiriş Elemanlar):** Dinamik viraj yükleri altında (550N'a kadar yanal şok) ilk yer değiştirme ve rijitlik testleri[cite: 339, 341].
+3. [cite_start]**Alt Modelleme (Katı Elemanlar):** Özellikle direksiyon mafsal bağlantıları (stub axles) gibi yüksek gerilme bölgeleri izole edilmiş ve alt modelleme teknikleri kullanılarak detaylandırılmıştır[cite: 87].
+   * [cite_start]*Sonuç:* Maksimum Von Mises gerilmesi **283 MPa** (S355 çeliğinin 355 MPa akma sınırının güvenli bir şekilde altındadır)[cite: 361, 362, 363].
+4. [cite_start]**Yorulma Analizi:** 25mm arka aks milinin dinamik yükler altındaki sonsuz ömrü **Soderberg Kriteri** kullanılarak doğrulanmıştır[cite: 88, 323, 408].
+5. [cite_start]**Stabilite:** Burkulma analizi (buckling) 1.6'lık kritik yük faktörünü doğrulamıştır[cite: 372].
+
+![FEA Stress Distribution](Results_and_Images/analysis-vonmises.JPG)
+
+![FEA Substitution](Results_and_Images/analysis-substitution.JPG)
+
+## 📂 Depo Yapısı
+* `/CAD_Models`: SolidWorks yerel parça/montaj dosyalarını (.sldprt, .sldasm) ve evrensel erişim için dışa aktarılmış .STEP dosyalarını içerir.
+* `/Results_and_Images`: Yüksek çözünürlüklü CAD render'larını ve FEA gerilme dağılımı haritalarını içerir.
+* `/Documentations`: Tüm matematiksel modelleri, malzeme seçimini ve maliyet analizini detaylandıran kapsamlı mühendislik tasarım raporu.
+
+---
+[cite_start]*Mekatronik Mühendisliği tasarım projesi olarak Erdoğan Kır tarafından tasarlanmıştır.* [cite: 8, 80]
