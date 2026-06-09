@@ -38,6 +38,7 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 ---
 *Designed by Erdoğan Kır as a senior Mechatronics Engineering design project.*
 
+---
 # Elektrikli Go-Kart Şasi Tasarımı ve Yapısal Optimizasyonu 🏎️⚡
 
 Bu depo, yol tutuş odaklı bir elektrikli go-kart şasisinin kavramsal tasarımını, makine mühendisliği hesaplamalarını ve Sonlu Elemanlar Analizi'ni (FEA) içermektedir.
