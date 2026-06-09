@@ -79,4 +79,5 @@ Tüm tasarım ve simülasyon aşamaları **SolidWorks 2024** kullanılarak gerç
 
 ---
 *Mekatronik Mühendisliği tasarım projesi olarak Erdoğan Kır tarafından tasarlanmıştır.* 
+
 SADECE TİCARİ OLMAYAN KULLANIM İÇİNDİR
