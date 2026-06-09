@@ -37,6 +37,7 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 
 ---
 *Designed by Erdoğan Kır as a senior Mechatronics Engineering design project.*
+NON-COMMERCIAL USE ONLY
 
 ---
 # Elektrikli Go-Kart Şasi Tasarımı ve Yapısal Optimizasyonu 🏎️⚡
@@ -78,3 +79,4 @@ Tüm tasarım ve simülasyon aşamaları **SolidWorks 2024** kullanılarak gerç
 
 ---
 *Mekatronik Mühendisliği tasarım projesi olarak Erdoğan Kır tarafından tasarlanmıştır.* 
+SADECE TİCARİ OLMAYAN KULLANIM İÇİNDİR
