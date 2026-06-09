@@ -37,6 +37,7 @@ All design and simulation phases were executed using **SolidWorks 2024**. The en
 
 ---
 *Designed by Erdoğan Kır as a senior Mechatronics Engineering design project.*
+
 NON-COMMERCIAL USE ONLY
 
 ---
